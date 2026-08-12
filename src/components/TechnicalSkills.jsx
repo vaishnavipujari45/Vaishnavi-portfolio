@@ -60,10 +60,16 @@ export default function TechnicalSkills() {
                   onMouseDown={(event) => event.preventDefault()}
                   onClick={(event) => {
                     event.preventDefault()
+                    event.stopPropagation()
                     setActiveId(cat.id)
                   }}
-                  style={{ left: `${cat.pos.x}%`, top: `${cat.pos.y}%` }}
-                  className="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-1 z-20"
+                  style={{
+                    left: `${cat.pos.x}%`,
+                    top: `${cat.pos.y}%`,
+                    x: '-50%',
+                    y: '-50%',
+                  }}
+                  className="absolute flex flex-col items-center gap-1 z-20"
                   whileHover={{ scale: 1.08 }}
                   whileTap={{ scale: 0.96 }}
                   aria-pressed={isActive}
