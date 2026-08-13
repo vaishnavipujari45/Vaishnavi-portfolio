@@ -26,10 +26,10 @@ export default function Contact() {
             <div className="relative grid md:grid-cols-2 gap-8">
               <div>
                 <h3 className="font-display text-2xl md:text-3xl font-semibold text-ink">
-                  Ready to add a data-driven voice to your team?
+                  Ready to turn data into meaningful insights?
                 </h3>
                 <p className="text-muted mt-3 max-w-md leading-relaxed">
-                  Download the full resume for a complete picture, or reach out directly — I usually reply within a day.
+                  Explore my projects, view my resume, or get in touch to discuss opportunities in data analytics.
                 </p>
                 <a
                   href={profile.resumeFile}
